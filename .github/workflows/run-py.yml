@@ -1,0 +1,23 @@
+name: Python runner
+
+on: push
+
+jobs:
+  runner:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Ayon AAAAAAAAAA
+    - uses: actions/checkout@v2
+
+    - name: setup python
+    - run: |
+        sudo apt update
+        sudo apt install -y python3
+      
+    - name: run python
+    - run: |
+        python3 main.py
+    
+    - name: run python 2
+    - run: |
+        python3 main2.py
