@@ -16,8 +16,18 @@ jobs:
       
     - name: run python
       run: |
-        python3 main.py
+        sudo python3 main.py > one.txt
     
     - name: run python 2
       run: |
-        python3 main2.py
+        sudo python3 main2.py > two.txt
+    
+    - name: run python 3
+      run: |
+        sudo python3 main3.py > final.txt
+    
+    - name: upload final
+      uses: actions/upload-artifact@v2
+      with:
+        name: final
+        path: final.txt
