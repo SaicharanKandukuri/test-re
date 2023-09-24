@@ -1,0 +1,1032 @@
+[1mbuild/make/core/soong_config.mk:199: [35mwarning: [0m[1mBOARD_PLAT_PUBLIC_SEPOLICY_DIR has been deprecated. Use SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS instead.[0m
+[1mbuild/make/core/soong_config.mk:200: [35mwarning: [0m[1mBOARD_PLAT_PRIVATE_SEPOLICY_DIR has been deprecated. Use SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS instead.[0m
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=12
+LINEAGE_VERSION=19.1-20230924-UNOFFICIAL-m31
+TARGET_PRODUCT=lineage_m31
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=cortex-a53
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv8-a
+TARGET_2ND_CPU_VARIANT=cortex-a53
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-5.15.0-1041-azure-x86_64-Ubuntu-20.04.6-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=SQ3A.220705.004
+OUT_DIR=out
+PRODUCT_SOONG_NAMESPACES=vendor/samsung/universal9611-common device/samsung/universal9611-common hardware/google/interfaces hardware/google/pixel hardware/samsung hardware/samsung/aidl/power-libperfmgr vendor/samsung/m31 packages/apps/Bluetooth
+============================================
+ninja: no work to do.
+No need to regenerate ninja file
+No need to regenerate ninja file
+No need to regenerate ninja file
+Starting ninja...
+[ 20% 1/5] Building Kernel Config
+make: Entering directory '/workspaces/test-re/hallium/kernel/samsung/universal9611'
+make[1]: Entering directory '/workspaces/test-re/hallium/out/target/product/m31/obj/KERNEL_OBJ'
+  GEN     ./Makefile
+arch/arm64/configs/vendor/m31_defconfig:5685:warning: override: reassigning to symbol DEFAULT_SECURITY
+arch/arm64/configs/vendor/m31_defconfig:5961:warning: override: reassigning to symbol DEFAULT_SECURITY
+warning: (SND_SOC_SAMSUNG_VOGUE_CS47L15) selects REGULATOR_ARIZONA_LDO1 which has unmet direct dependencies (REGULATOR && MFD_ARIZONA && SND_SOC)
+warning: (SND_SOC_SAMSUNG_VOGUE_CS47L15) selects REGULATOR_ARIZONA_MICSUPP which has unmet direct dependencies (REGULATOR && MFD_ARIZONA && SND_SOC)
+warning: (SND_SOC_SAMSUNG_VOGUE_CS47L15) selects REGULATOR_ARIZONA_LDO1 which has unmet direct dependencies (REGULATOR && MFD_ARIZONA && SND_SOC)
+warning: (SND_SOC_SAMSUNG_VOGUE_CS47L15) selects REGULATOR_ARIZONA_MICSUPP which has unmet direct dependencies (REGULATOR && MFD_ARIZONA && SND_SOC)
+#
+# configuration written to .config
+#
+  GEN     ./Makefile
+Using .config as base
+Merging /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/m31.config
+Value of CONFIG_MFD_ARIZONA_SPI is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/m31.config:
+Previous value: # CONFIG_MFD_ARIZONA_SPI is not set
+New value: CONFIG_MFD_ARIZONA_SPI=y
+
+#
+# merged configuration written to .config (needs make)
+#
+  GEN     ./Makefile
+scripts/kconfig/conf  --oldconfig Kconfig
+*
+* Restart config...
+*
+*
+* Miscellaneous devices
+*
+Miscellaneous devices (INPUT_MISC) [Y/n/?] y
+  Analog Devices AD714x Capacitance Touch Sensor (INPUT_AD714X) [N/m/y/?] n
+  Arizona haptics support (INPUT_ARIZONA_HAPTICS) [N/m/y/?] (NEW) 
+  Atmel Capacitive Touch Button Driver (INPUT_ATMEL_CAPTOUCH) [N/m/y/?] n
+  BMA150/SMB380 acceleration sensor support (INPUT_BMA150) [N/m/y/?] n
+  NI Ettus Research USRP E3xx Button support. (INPUT_E3X0_BUTTON) [N/m/y/?] n
+  MMA8450 - Freescale's 3-Axis, 8/12-bit Digital Accelerometer (INPUT_MMA8450) [N/m/y/?] n
+  Sharp GP2AP002A00F I2C Proximity/Opto sensor driver (INPUT_GP2A) [N/m/y/?] n
+  Generic GPIO Beeper support (INPUT_GPIO_BEEPER) [N/m/y/?] n
+  Polled GPIO tilt switch (INPUT_GPIO_TILT_POLLED) [N/m/y/?] n
+  Polled GPIO Decoder Input driver (INPUT_GPIO_DECODER) [N/m/y/?] n
+  ATI / Philips USB RF remote control (INPUT_ATI_REMOTE2) [N/m/y/?] n
+  Keyspan DMR USB remote control (INPUT_KEYSPAN_REMOTE) [N/m/y/?] n
+  Kionix KXTJ9 tri-axis digital accelerometer (INPUT_KXTJ9) [N/m/y/?] n
+  Griffin PowerMate and Contour Jog support (INPUT_POWERMATE) [N/m/y/?] n
+  Yealink usb-p1k voip phone (INPUT_YEALINK) [N/m/y/?] n
+  C-Media CM109 USB I/O Controller (INPUT_CM109) [N/m/y/?] n
+  Regulator haptics support (INPUT_REGULATOR_HAPTIC) [N/m/y/?] n
+  User level driver support (INPUT_UINPUT) [Y/n/m/?] y
+  GPIO driver support (INPUT_GPIO) [Y/n/m/?] y
+  PCF8574 Keypad input device (INPUT_PCF8574) [N/m/y/?] n
+  PWM beeper support (INPUT_PWM_BEEPER) [N/m/y/?] n
+  PWM vibrator support (INPUT_PWM_VIBRA) [N/m/y/?] n
+  Rotary encoders connected to GPIO pins (INPUT_GPIO_ROTARY_ENCODER) [N/m/y/?] n
+  Analog Devices ADXL34x Three-Axis Digital Accelerometer (INPUT_ADXL34X) [N/m/y/?] n
+  IMS Passenger Control Unit driver (INPUT_IMS_PCU) [N/m/y/?] n
+  VTI CMA3000 Tri-axis accelerometer (INPUT_CMA3000) [N/m/y/?] n
+  Windows-compatible SoC Button Array (INPUT_SOC_BUTTON_ARRAY) [N/m/y/?] n
+  TI DRV260X haptics support (INPUT_DRV260X_HAPTICS) [N/m/y/?] n
+  TI DRV2665 haptics support (INPUT_DRV2665_HAPTICS) [N/m/y/?] n
+  TI DRV2667 haptics support (INPUT_DRV2667_HAPTICS) [N/m/y/?] n
+  *
+  * Hall IC
+  *
+  Enable HALL IC (HALL) [N/m/y/?] n
+  Enable CERTIFY HALL IC (CERTIFY_HALL) [N/m/y/?] n
+  Enable EMULATE HALL IC (EMULATE_HALL_IC) [N/m/y/?] n
+  Enable WACOM HALL IC (WACOM_HALL) [N/m/y/?] n
+*
+* MFD GPIO expanders
+*
+Wolfson Microelectronics Arizona class devices (GPIO_ARIZONA) [N/m/y/?] (NEW) 
+Cirrus Logic Madera class codecs (GPIO_MADERA) [Y/?] y
+*
+* Multifunction device drivers
+*
+Active-semi ACT8945A (MFD_ACT8945A) [N/m/y/?] n
+AMS AS3711 (MFD_AS3711) [N/y/?] n
+ams AS3722 Power Management IC (MFD_AS3722) [N/m/y/?] n
+Analog Devices ADP5520/01 MFD PMIC Core Support (PMIC_ADP5520) [N/y/?] n
+AnalogicTech AAT2870 (MFD_AAT2870_CORE) [N/y/?] n
+Atmel Flexcom (Flexible Serial Communication Unit) (MFD_ATMEL_FLEXCOM) [N/m/y/?] n
+Atmel HLCDC (High-end LCD Controller) (MFD_ATMEL_HLCDC) [N/m/y/?] n
+Broadcom BCM590xx PMUs (MFD_BCM590XX) [N/m/y/?] n
+ROHM BD9571MWV PMIC (MFD_BD9571MWV) [N/m/y/?] n
+X-Powers AXP series PMICs with I2C (MFD_AXP20X_I2C) [N/m/y/?] n
+ChromeOS Embedded Controller (MFD_CROS_EC) [N/m/y/?] n
+Dialog Semiconductor DA9030/DA9034 PMIC Support (PMIC_DA903X) [N/y/?] n
+Dialog Semiconductor DA9052/53 PMIC variants with SPI (MFD_DA9052_SPI) [N/y/?] n
+Dialog Semiconductor DA9052/53 PMIC variants with I2C (MFD_DA9052_I2C) [N/y/?] n
+Dialog Semiconductor DA9055 PMIC Support (MFD_DA9055) [N/y/?] n
+Dialog Semiconductor DA9062/61 PMIC Support (MFD_DA9062) [N/m/y/?] n
+Dialog Semiconductor DA9063 PMIC Support (MFD_DA9063) [N/m/y/?] n
+Dialog Semiconductor DA9150 Charger Fuel-Gauge chip (MFD_DA9150) [N/m/y/?] n
+Diolan DLN2 support (MFD_DLN2) [N/m/y/?] n
+Samsung Exynos SoC Low Power Audio Subsystem (MFD_EXYNOS_LPASS) [N/m/y/?] n
+Freescale MC13783 and MC13892 SPI interface (MFD_MC13XXX_SPI) [N/m/y/?] n
+Freescale MC13892 I2C interface (MFD_MC13XXX_I2C) [N/m/y/?] n
+HiSilicon Hi6421 PMU/Codec IC (MFD_HI6421_PMIC) [N/m/y/?] n
+HTC PASIC3 LED/DS1WM chip support (HTC_PASIC3) [N/m/y/?] n
+HTC I2C PLD chip support (HTC_I2CPLD) [N/y/?] n
+Kontron module PLD device (MFD_KEMPLD) [N/m/y/?] n
+Marvell 88PM800 (MFD_88PM800) [N/m/y/?] n
+Marvell 88PM805 (MFD_88PM805) [N/m/y/?] n
+Marvell 88PM8606/88PM8607 (MFD_88PM860X) [N/y/?] n
+Maxim Semiconductor MAX14577/77836 MUIC + Charger Support (MFD_MAX14577) [N/m/y/?] n
+Maxim Semiconductor MAX77620 and MAX20024 PMIC Support (MFD_MAX77620) [N/y/?] n
+Maxim Semiconductor MAX77686/802 PMIC Support (MFD_MAX77686) [N/m/y/?] n
+Maxim Semiconductor MAX77693 PMIC Support (MFD_MAX77693) [N/m/y/?] n
+Maxim Semiconductor MAX77843 PMIC Support (MFD_MAX77843) [N/y/?] n
+Maxim Semiconductor MAX8907 PMIC Support (MFD_MAX8907) [N/m/y/?] n
+SAMSUNG Electronics S2MU106 IF PMIC Series Support (MFD_S2MU106) [Y/n/?] y
+Maxim Semiconductor MAX8925 PMIC Support (MFD_MAX8925) [N/y/?] n
+Maxim Semiconductor MAX8997/8966 PMIC Support (MFD_MAX8997) [N/y/?] n
+Maxim Semiconductor MAX8998/National LP3974 PMIC Support (MFD_MAX8998) [N/y/?] n
+MediaTek MT6397 PMIC Support (MFD_MT6397) [N/m/y/?] n
+MEN 14F021P00 Board Management Controller Support (MFD_MENF21BMC) [N/m/y/?] n
+Motorola EZXPCAP Support (EZX_PCAP) [N/y/?] n
+Support for Motorola CPCAP (MFD_CPCAP) [N/m/y/?] n
+Nano River Technologies Viperboard (MFD_VIPERBOARD) [N/m/y/?] n
+Nokia Retu and Tahvo multi-function device (MFD_RETU) [N/m/y/?] n
+NXP PCF50633 (MFD_PCF50633) [N/m/y/?] n
+Richtek RT5033 Power Management IC (MFD_RT5033) [N/m/y/?] n
+Realtek USB card reader (MFD_RTSX_USB) [N/m/y/?] n
+Ricoh RC5T583 Power Management system device (MFD_RC5T583) [N/y/?] n
+Rockchip RK805/RK808/RK818 Power Management Chip (MFD_RK808) [N/m/y/?] n
+Ricoh RN5T567/618 PMIC (MFD_RN5T618) [N/m/y/?] n
+SAMSUNG Electronics PMIC Series Support (MFD_SEC_CORE) [Y/n/?] y
+Samsung Electronics S2MU004 IF PMIC Series Support (MFD_S2MU004) [N/y/?] n
+SAMSUNG Electronics S2MPU09 PMIC Series Support (MFD_S2MPU09) [Y/n/?] y
+Samsung Semiconductor S2MPB02 PMIC Support (MFD_S2MPB02) [N/y/?] n
+Silicon Laboratories 4761/64/68 AM/FM radio. (MFD_SI476X_CORE) [N/m/y/?] n
+Silicon Motion SM501 (MFD_SM501) [N/m/y/?] n
+Skyworks Solutions SKY81452 (MFD_SKY81452) [N/m/y/?] n
+SMSC ECE1099 series chips (MFD_SMSC) [N/y/?] n
+ST-Ericsson ABX500 Mixed Signal Circuit register functions (ABX500_CORE) [N/y/?] n
+STMicroelectronics STMPE (MFD_STMPE) [N/y/?] n
+System Controller Register R/W Based on Regmap (MFD_SYSCON) [Y/?] y
+TI ADC / Touch Screen chip support (MFD_TI_AM335X_TSCADC) [N/m/y/?] n
+TI/National Semiconductor LP3943 MFD Driver (MFD_LP3943) [N/m/y/?] n
+TI LP8788 Power Management Unit Driver (MFD_LP8788) [N/y/?] n
+TI Lighting Management Unit driver (MFD_TI_LMU) [N/m/y/?] n
+TI Palmas series chips (MFD_PALMAS) [N/y/?] n
+TI TPS61050/61052 Boost Converters (TPS6105X) [N/m/y/?] n
+TI TPS6501x Power Management chips (TPS65010) [N/m/y/?] n
+TI TPS6507x Power Management / Touch Screen chips (TPS6507X) [N/m/y/?] n
+TI TPS65086 Power Management Integrated Chips (PMICs) (MFD_TPS65086) [N/m/y/?] n
+TI TPS65090 Power Management chips (MFD_TPS65090) [N/y/?] n
+TI TPS65217 Power Management / White LED chips (MFD_TPS65217) [N/m/y/?] n
+TI LP873X Power Management IC (MFD_TI_LP873X) [N/m/y/?] n
+TI LP87565 Power Management IC (MFD_TI_LP87565) [N/m/y/?] n
+TI TPS65218 Power Management chips (MFD_TPS65218) [N/m/y/?] n
+TI TPS6586x Power Management chips (MFD_TPS6586X) [N/y/?] n
+TI TPS65910 Power Management chip (MFD_TPS65910) [N/y/?] n
+TI TPS65912 Power Management chip with I2C (MFD_TPS65912_I2C) [N/m/y/?] n
+TI TPS65912 Power Management chip with SPI (MFD_TPS65912_SPI) [N/m/y/?] n
+TI TPS80031/TPS80032 Power Management chips (MFD_TPS80031) [N/y/?] n
+TI TWL4030/TWL5030/TWL6030/TPS659x0 Support (TWL4030_CORE) [N/y/?] n
+TI TWL6040 audio codec (TWL6040_CORE) [N/y/?] n
+TI WL1273 FM radio (MFD_WL1273_CORE) [N/m/y/?] n
+TI/National Semiconductor LM3533 Lighting Power chip (MFD_LM3533) [N/m/y/?] n
+Toshiba TC35892 and variants (MFD_TC3589X) [N/y/?] n
+Cirrus Logic/Wolfson Microelectronics Arizona platform with I2C (MFD_ARIZONA_I2C) [N/m/y/?] n
+Cirrus Logic/Wolfson Microelectronics Arizona platform with SPI (MFD_ARIZONA_SPI) [Y/n/m/?] y
+Cirrus Logic Madera codecs with I2C (MFD_MADERA_I2C) [N/y/?] n
+Cirrus Logic Madera codecs with SPI (MFD_MADERA_SPI) [Y/?] y
+Cirrus Logic CS47L15 (MFD_CS47L15) [Y/?] y
+Cirrus Logic CS47L24 and WM1831 (MFD_CS47L24) [N/y/?] (NEW) 
+Wolfson Microelectronics WM5102 (MFD_WM5102) [N/y/?] (NEW) 
+Wolfson Microelectronics WM5110 and WM8280/WM8281 (MFD_WM5110) [N/y/?] (NEW) 
+Wolfson Microelectronics WM8997 (MFD_WM8997) [N/y/?] (NEW) 
+Wolfson Microelectronics WM8998 (MFD_WM8998) [N/y/?] (NEW) 
+Wolfson Microelectronics WM8400 (MFD_WM8400) [N/y/?] n
+Wolfson Microelectronics WM831x/2x PMICs with I2C (MFD_WM831X_I2C) [N/y/?] n
+Wolfson Microelectronics WM831x/2x PMICs with SPI (MFD_WM831X_SPI) [N/y/?] n
+Wolfson Microelectronics WM8350 with I2C (MFD_WM8350_I2C) [N/y/?] n
+Wolfson Microelectronics WM8994 (MFD_WM8994) [N/m/y/?] n
+Cirrus Logic CS35L41 codec (MFD_CS35L41) [N/m/y] n
+Cirrus Logic CS35L41 codec (SPI) (MFD_CS35L41_SPI) [N/m/y] n
+Cirrus Logic CS35L41 codec (I2C) (MFD_CS35L41_I2C) [N/m/y] n
+Siliconmitus SM5713 IFPM Support (MFD_SM5713) [Y/n/?] y
+*
+* ASoC support for Samsung
+*
+ASoC support for Samsung (SND_SOC_SAMSUNG) [Y/n/m/?] y
+  Samsung PCM interface support (SND_SAMSUNG_PCM) [N/m/y] n
+  Samsung SPDIF transmitter support (SND_SAMSUNG_SPDIF) [N/m/y] n
+  Samsung I2S interface support (SND_SAMSUNG_I2S) [N/m/y] n
+  Samsung display port audio interface support (SND_SOC_SAMSUNG_DISPLAYPORT) [N/m/y] n
+  SoC I2S Audio support for WM8994 on SMDK (SND_SOC_SAMSUNG_SMDK_WM8994) [N/m/y/?] n
+  SoC S/PDIF Audio support for SMDK (SND_SOC_SAMSUNG_SMDK_SPDIF) [N/m/y/?] n
+  SoC PCM Audio support for WM8994 on SMDK (SND_SOC_SMDK_WM8994_PCM) [N/m/y/?] n
+  Audio support for Google Snow boards (SND_SOC_SNOW) [N/m/y/?] n
+  Audio support for Odroid XU3/XU4 (SND_SOC_ODROID) [N/m/y/?] n
+  Audio support on exynos9610 (SND_SOC_SAMSUNG_EXYNOS9610) [Y/n/m/?] y
+  Audio support for RT5665(ALC5665) on Exynos9610 (SND_SOC_SAMSUNG_EXYNOS9610_RT5665_ALC5665) [N/m/y] n
+  Audio support for RT5665 on VOGUE (SND_SOC_SAMSUNG_VOGUE_RT5665) [Y/n/m] y
+  Audio support for CS47L15 on VOGUE (SND_SOC_SAMSUNG_VOGUE_CS47L15) [Y/n/m] y
+  Audio support for RT5631(ALC5631) on Arndale Board (SND_SOC_ARNDALE_RT5631_ALC5631) [N/m/y] n
+  SoC I2S Audio support for WM5110 on TM2 board (SND_SOC_SAMSUNG_TM2_WM5110) [N/m/y/?] (NEW) 
+  Audio support for Samsung Projects (SND_SOC_SAMSUNG_AUDIO) [Y/n/m/?] y
+  ASoC support for Samsung ABOX Audio (SND_SOC_SAMSUNG_ABOX) [Y/?] y
+    Samsung ABOX Synchronized IPC for Audio (SEC_SND_SYNCHRONIZED_IPC) [N/m/y/?] n
+    Samsung ABOX Synchronized IPC for Audio AMP Richtek (SEC_SND_SYNCHRONIZED_IPC_RICHTEK) [Y/n/m/?] y
+    Samsung ABOX Adaptation for Audio (SEC_SND_ADAPTATION) [N/m/y/?] n
+  Samsung MAILBOX (SND_SOC_SAMSUNG_MAILBOX) [N/y/?] n
+*
+* External Connector Class (extcon) support
+*
+External Connector Class (extcon) support (EXTCON) [Y/n/m/?] y
+  *
+  * Extcon Device Drivers
+  *
+  ADC Jack extcon support (EXTCON_ADC_JACK) [N/m/y/?] n
+  Wolfson Arizona EXTCON support (EXTCON_ARIZONA) [N/m/y/?] (NEW) 
+  GPIO extcon support (EXTCON_GPIO) [N/m/y/?] n
+  Cirrus Logic Madera codec support (EXTCON_MADERA) [Y/?] y
+    Report events through input key events (EXTCON_MADERA_INPUT_EVENT) [Y/?] y
+  Maxim MAX3355 USB OTG EXTCON Support (EXTCON_MAX3355) [N/m/y/?] n
+  Richtek RT8973A EXTCON support (EXTCON_RT8973A) [N/m/y/?] n
+  Silicon Mitus SM5502 EXTCON support (EXTCON_SM5502) [N/m/y/?] n
+  USB GPIO extcon support (EXTCON_USB_GPIO) [N/m/y/?] n
+#
+# configuration written to .config
+#
+  GEN     ./Makefile
+Using .config as base
+Merging /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config
+Value of CONFIG_ARM_EXYNOS_DEVFREQ_DEBUG is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_ARM_EXYNOS_DEVFREQ_DEBUG=y
+New value: # CONFIG_ARM_EXYNOS_DEVFREQ_DEBUG is not set
+
+Value of CONFIG_AUDIT is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_AUDIT=y
+New value: # CONFIG_AUDIT is not set
+
+Value of CONFIG_CMUCAL_DEBUG is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_CMUCAL_DEBUG=y
+New value: # CONFIG_CMUCAL_DEBUG is not set
+
+Value of CONFIG_CONTEXTHUB_DEBUG is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_CONTEXTHUB_DEBUG=y
+New value: # CONFIG_CONTEXTHUB_DEBUG is not set
+
+Value of CONFIG_CRYPTO_FIPS is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_CRYPTO_FIPS=y
+New value: # CONFIG_CRYPTO_FIPS is not set
+
+Value of CONFIG_DEBUG_KERNEL is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_DEBUG_KERNEL=y
+New value: # CONFIG_DEBUG_KERNEL is not set
+
+Value of CONFIG_DEVTMPFS is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_DEVTMPFS=y
+New value: # CONFIG_DEVTMPFS is not set
+
+Value of CONFIG_EXYNOS_FMP_FIPS is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_EXYNOS_FMP_FIPS=y
+New value: # CONFIG_EXYNOS_FMP_FIPS is not set
+
+Value of CONFIG_ION_DEBUG_EVENT_RECORD is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_ION_DEBUG_EVENT_RECORD=y
+New value: # CONFIG_ION_DEBUG_EVENT_RECORD is not set
+
+Value of CONFIG_KNOX_NCM is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_KNOX_NCM=y
+New value: # CONFIG_KNOX_NCM is not set
+
+Value of CONFIG_MALI_EXYNOS_DEBUG is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_MALI_EXYNOS_DEBUG=y
+New value: # CONFIG_MALI_EXYNOS_DEBUG is not set
+
+Value of CONFIG_MMC_DW_DEBUG is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_MMC_DW_DEBUG=y
+New value: # CONFIG_MMC_DW_DEBUG is not set
+
+Value of CONFIG_NET_SUPPORT_DROPDUMP is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_NET_SUPPORT_DROPDUMP=y
+New value: # CONFIG_NET_SUPPORT_DROPDUMP is not set
+
+Value of CONFIG_NTFS_FS is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_NTFS_FS=y
+New value: # CONFIG_NTFS_FS is not set
+
+Value of CONFIG_PM_DEBUG is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_PM_DEBUG=y
+New value: # CONFIG_PM_DEBUG is not set
+
+Value of CONFIG_SAMSUNG_LMKD_DEBUG is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_SAMSUNG_LMKD_DEBUG=y
+New value: # CONFIG_SAMSUNG_LMKD_DEBUG is not set
+
+Value of CONFIG_SBD_BOOTLOG is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_SBD_BOOTLOG=y
+New value: # CONFIG_SBD_BOOTLOG is not set
+
+Value of CONFIG_SCHED_DEBUG is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_SCHED_DEBUG=y
+New value: # CONFIG_SCHED_DEBUG is not set
+
+Value of CONFIG_SCSC_LOGRING is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_SCSC_LOGRING=y
+New value: # CONFIG_SCSC_LOGRING is not set
+
+Value of CONFIG_SCSC_LOG_COLLECTION is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_SCSC_LOG_COLLECTION=y
+New value: # CONFIG_SCSC_LOG_COLLECTION is not set
+
+Value of CONFIG_SCSC_MXLOGGER is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_SCSC_MXLOGGER=y
+New value: # CONFIG_SCSC_MXLOGGER is not set
+
+Value of CONFIG_SCSC_WIFILOGGER is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_SCSC_WIFILOGGER=y
+New value: # CONFIG_SCSC_WIFILOGGER is not set
+
+Value of CONFIG_SCSC_WLAN_MUTEX_DEBUG is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_SCSC_WLAN_MUTEX_DEBUG=y
+New value: # CONFIG_SCSC_WLAN_MUTEX_DEBUG is not set
+
+Value of CONFIG_SCSI_UFS_CMD_LOGGING is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_SCSI_UFS_CMD_LOGGING=y
+New value: # CONFIG_SCSI_UFS_CMD_LOGGING is not set
+
+Value of CONFIG_SEC_NFC_LOGGER is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_SEC_NFC_LOGGER=y
+New value: # CONFIG_SEC_NFC_LOGGER is not set
+
+Value of CONFIG_SEC_PM_DEBUG is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_SEC_PM_DEBUG=y
+New value: # CONFIG_SEC_PM_DEBUG is not set
+
+Value of CONFIG_SLUB_DEBUG is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_SLUB_DEBUG=y
+New value: # CONFIG_SLUB_DEBUG is not set
+
+Value of CONFIG_UFS_DATA_LOG is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_UFS_DATA_LOG=y
+New value: # CONFIG_UFS_DATA_LOG is not set
+
+Value of CONFIG_USB_DEBUG_DETAILED_LOG is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_USB_DEBUG_DETAILED_LOG=y
+New value: # CONFIG_USB_DEBUG_DETAILED_LOG is not set
+
+Value of CONFIG_ANDROID_BINDERFS is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_ANDROID_BINDERFS is not set
+New value: CONFIG_ANDROID_BINDERFS=y
+
+Value of CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE is not set
+New value: CONFIG_CC_OPTIMIZE_FOR_PERFORMANCE=y
+
+Value of CONFIG_CFQ_GROUP_IOSCHED is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_CFQ_GROUP_IOSCHED is not set
+New value: CONFIG_CFQ_GROUP_IOSCHED=y
+
+Value of CONFIG_CRYPTO_CHACHA20POLY1305 is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_CRYPTO_CHACHA20POLY1305 is not set
+New value: CONFIG_CRYPTO_CHACHA20POLY1305=y
+
+Value of CONFIG_CRYPTO_LZ4 is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_CRYPTO_LZ4 is not set
+New value: CONFIG_CRYPTO_LZ4=y
+
+Value of CONFIG_CRYPTO_LZ4HC is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_CRYPTO_LZ4HC is not set
+New value: CONFIG_CRYPTO_LZ4HC=y
+
+Value of CONFIG_CRYPTO_ZSTD is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_CRYPTO_ZSTD is not set
+New value: CONFIG_CRYPTO_ZSTD=y
+
+Value of CONFIG_DM_SNAPSHOT is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_DM_SNAPSHOT is not set
+New value: CONFIG_DM_SNAPSHOT=y
+
+Value of CONFIG_DUMMY is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_DUMMY is not set
+New value: CONFIG_DUMMY=y
+
+Value of CONFIG_EROFS_FS is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_EROFS_FS is not set
+New value: CONFIG_EROFS_FS=y
+
+Value of CONFIG_INCREMENTAL_FS is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_INCREMENTAL_FS is not set
+New value: CONFIG_INCREMENTAL_FS=y
+
+Value of CONFIG_IOSCHED_ANXIETY is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_IOSCHED_ANXIETY is not set
+New value: CONFIG_IOSCHED_ANXIETY=y
+
+Value of CONFIG_IOSCHED_BFQ is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_IOSCHED_BFQ is not set
+New value: CONFIG_IOSCHED_BFQ=y
+
+Value of CONFIG_IOSCHED_FIOPS is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_IOSCHED_FIOPS is not set
+New value: CONFIG_IOSCHED_FIOPS=y
+
+Value of CONFIG_IOSCHED_MAPLE is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_IOSCHED_MAPLE is not set
+New value: CONFIG_IOSCHED_MAPLE=y
+
+Value of CONFIG_IOSCHED_SIO is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_IOSCHED_SIO is not set
+New value: CONFIG_IOSCHED_SIO=y
+
+Value of CONFIG_IOSCHED_ZEN is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_IOSCHED_ZEN is not set
+New value: CONFIG_IOSCHED_ZEN=y
+
+Value of CONFIG_IP_NF_TARGET_TTL is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_IP_NF_TARGET_TTL is not set
+New value: CONFIG_IP_NF_TARGET_TTL=y
+
+Value of CONFIG_LD_LLD is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_LD_LLD is not set
+New value: CONFIG_LD_LLD=y
+
+Value of CONFIG_LLVM_POLLY is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_LLVM_POLLY is not set
+New value: CONFIG_LLVM_POLLY=y
+
+Value of CONFIG_LOCALVERSION is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_LOCALVERSION=""
+New value: CONFIG_LOCALVERSION="-Grass"
+
+Value of CONFIG_LTO_CLANG is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_LTO_CLANG is not set
+New value: CONFIG_LTO_CLANG=y
+
+Value of CONFIG_NET_SCH_CODEL is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_NET_SCH_CODEL is not set
+New value: CONFIG_NET_SCH_CODEL=y
+
+Value of CONFIG_NET_SCH_DEFAULT is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_NET_SCH_DEFAULT is not set
+New value: CONFIG_NET_SCH_DEFAULT=y
+
+Value of CONFIG_NET_SCH_FQ is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_NET_SCH_FQ is not set
+New value: CONFIG_NET_SCH_FQ=y
+
+Value of CONFIG_NET_SCH_FQ_CODEL is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_NET_SCH_FQ_CODEL is not set
+New value: CONFIG_NET_SCH_FQ_CODEL=y
+
+Value of CONFIG_NET_SCH_MQPRIO is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_NET_SCH_MQPRIO is not set
+New value: CONFIG_NET_SCH_MQPRIO=y
+
+Value of CONFIG_PSI is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_PSI is not set
+New value: CONFIG_PSI=y
+
+Value of CONFIG_SCSC_BUILD_TYPE is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_SCSC_BUILD_TYPE=""
+New value: CONFIG_SCSC_BUILD_TYPE="User"
+
+Value of CONFIG_SCSC_WLAN_AP_AUTO_RECOVERY is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_SCSC_WLAN_AP_AUTO_RECOVERY is not set
+New value: CONFIG_SCSC_WLAN_AP_AUTO_RECOVERY=y
+
+Value of CONFIG_SCSC_WLAN_SILENT_RECOVERY is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_SCSC_WLAN_SILENT_RECOVERY is not set
+New value: CONFIG_SCSC_WLAN_SILENT_RECOVERY=y
+
+Value of CONFIG_SYSTEM_TRUSTED_KEYRING is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: # CONFIG_SYSTEM_TRUSTED_KEYRING is not set
+New value: CONFIG_SYSTEM_TRUSTED_KEYRING=y
+
+Value of CONFIG_TCP_CONG_HTCP is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_TCP_CONG_HTCP=m
+New value: CONFIG_TCP_CONG_HTCP=y
+
+Value of CONFIG_TCP_CONG_WESTWOOD is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_TCP_CONG_WESTWOOD=m
+New value: CONFIG_TCP_CONG_WESTWOOD=y
+
+Value of CONFIG_WIREGUARD is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/grass.config:
+Previous value: CONFIG_WIREGUARD=m
+New value: CONFIG_WIREGUARD=y
+
+#
+# merged configuration written to .config (needs make)
+#
+  GEN     ./Makefile
+scripts/kconfig/conf  --oldconfig Kconfig
+.config:5960:warning: override: CC_OPTIMIZE_FOR_PERFORMANCE changes choice state
+.config:5967:warning: override: DEFAULT_WESTWOOD changes choice state
+.config:5982:warning: override: LD_LLD changes choice state
+.config:5986:warning: override: LTO_CLANG changes choice state
+.config:6003:warning: override: ZRAM_DEF_COMP_LZ4 changes choice state
+*
+* Restart config...
+*
+*
+* CPU/Task time and stats accounting
+*
+Cputime accounting
+> 1. Simple tick based cputime accounting (TICK_CPU_ACCOUNTING)
+  2. Full dynticks CPU time accounting (VIRT_CPU_ACCOUNTING_GEN)
+choice[1-2]: 1
+Fine granularity task level IRQ time accounting (IRQ_TIME_ACCOUNTING) [N/y/?] n
+Support window based load tracking (SCHED_WALT) [N/y/?] n
+BSD Process Accounting (BSD_PROCESS_ACCT) [N/y/?] n
+Export task/process statistics through netlink (TASKSTATS) [Y/n/?] y
+  Enable per-task delay accounting (TASK_DELAY_ACCT) [Y/n/?] y
+  Enable extended accounting over taskstats (TASK_XACCT) [Y/n/?] y
+    Enable per-task storage I/O accounting (TASK_IO_ACCOUNTING) [Y/n/?] y
+Pressure stall information tracking (PSI) [Y/n/?] y
+  Require boot parameter to enable pressure stall information tracking (PSI_DEFAULT_DISABLED) [N/y/?] (NEW) 
+*
+* General setup
+*
+Cross-compiler tool prefix (CROSS_COMPILE) [] 
+Compile also drivers which will not load (COMPILE_TEST) [N/y/?] n
+Local version - append to kernel release (LOCALVERSION) [-Grass] -Grass
+Automatically append version information to the version string (LOCALVERSION_AUTO) [Y/n/?] y
+  Leave only branch name and current tree (LOCALVERSION_BRANCH_SHA) [Y/n/?] y
+Default hostname (DEFAULT_HOSTNAME) [(none)] (none)
+Support for paging of anonymous memory (swap) (SWAP) [Y/n/?] y
+System V IPC (SYSVIPC) [Y/n/?] y
+POSIX Message Queues (POSIX_MQUEUE) [N/y/?] n
+Enable process_vm_readv/writev syscalls (CROSS_MEMORY_ATTACH) [Y/n/?] y
+open by fhandle syscalls (FHANDLE) [Y/n/?] y
+uselib syscall (USELIB) [N/y/?] n
+Auditing support (AUDIT) [Y/?] y
+*
+* IRQ subsystem
+*
+Expose hardware/virtual IRQ mapping via debugfs (IRQ_DOMAIN_DEBUG) [N/y/?] n
+Expose irq internals in debugfs (GENERIC_IRQ_DEBUGFS) [N/y/?] n
+*
+* Timers subsystem
+*
+Timer tick handling
+  1. Periodic timer ticks (constant rate, no dynticks) (HZ_PERIODIC)
+> 2. Idle dynticks system (tickless idle) (NO_HZ_IDLE)
+  3. Full dynticks system (tickless) (NO_HZ_FULL)
+choice[1-3]: 2
+Old Idle dynticks config (NO_HZ) [Y/n/?] y
+High Resolution Timer Support (HIGH_RES_TIMERS) [Y/n/?] y
+*
+* CPU/Task time and stats accounting
+*
+Cputime accounting
+> 1. Simple tick based cputime accounting (TICK_CPU_ACCOUNTING)
+  2. Full dynticks CPU time accounting (VIRT_CPU_ACCOUNTING_GEN)
+choice[1-2]: 1
+Fine granularity task level IRQ time accounting (IRQ_TIME_ACCOUNTING) [N/y/?] n
+Support window based load tracking (SCHED_WALT) [N/y/?] n
+BSD Process Accounting (BSD_PROCESS_ACCT) [N/y/?] n
+Export task/process statistics through netlink (TASKSTATS) [Y/n/?] y
+  Enable per-task delay accounting (TASK_DELAY_ACCT) [Y/n/?] y
+  Enable extended accounting over taskstats (TASK_XACCT) [Y/n/?] y
+    Enable per-task storage I/O accounting (TASK_IO_ACCOUNTING) [Y/n/?] y
+Pressure stall information tracking (PSI) [Y/n/?] y
+  Require boot parameter to enable pressure stall information tracking (PSI_DEFAULT_DISABLED) [N/y/?] n
+*
+* RCU Subsystem
+*
+Make expert-level adjustments to RCU configuration (RCU_EXPERT) [N/y/?] n
+Kernel .config support (IKCONFIG) [Y/n/m/?] y
+  Enable access to .config through /proc/config.gz (IKCONFIG_PROC) [Y/n/?] y
+Kernel log buffer size (16 => 64KB, 17 => 128KB) (LOG_BUF_SHIFT) [21] 21
+CPU kernel log buffer size contribution (13 => 8 KB, 17 => 128KB) (LOG_CPU_MAX_BUF_SHIFT) [12] 12
+Temporary per-CPU printk log buffer size (12 => 4KB, 13 => 8KB) (PRINTK_SAFE_LOG_BUF_SHIFT) [13] 13
+*
+* FAIR Scheuler tunables
+*
+Utilization's PELT half-Life
+  1. 32 ms, default for server (PELT_UTIL_HALFLIFE_32)
+> 2. 16 ms, suggested for interactive workloads (PELT_UTIL_HALFLIFE_16)
+  3. 8 ms, very fast (PELT_UTIL_HALFLIFE_8)
+choice[1-3?]: 2
+*
+* Control Group support
+*
+Control Group support (CGROUPS) [Y/n/?] y
+  Memory controller (MEMCG) [Y/n/?] y
+    Swap controller (MEMCG_SWAP) [Y/n/?] y
+      Swap controller enabled by default (MEMCG_SWAP_ENABLED) [Y/n/?] y
+      Force to use vm_swappiness instead of memcg->swappiness (MEMCG_FORCE_USE_VM_SWAPPINESS) [Y/n] y
+  IO controller (BLK_CGROUP) [Y/n/?] y
+    IO controller debugging (DEBUG_BLK_CGROUP) [N/y/?] n
+  *
+  * CPU controller
+  *
+  CPU controller (CGROUP_SCHED) [Y/n/?] y
+    Group scheduling for SCHED_OTHER (FAIR_GROUP_SCHED) [Y/n] y
+      CPU bandwidth provisioning for FAIR_GROUP_SCHED (CFS_BANDWIDTH) [Y/n/?] y
+    Group scheduling for SCHED_RR/FIFO (RT_GROUP_SCHED) [N/y/?] n
+  PIDs controller (CGROUP_PIDS) [N/y/?] n
+  RDMA controller (CGROUP_RDMA) [N/y/?] n
+  Freezer controller (CGROUP_FREEZER) [Y/n/?] y
+  Cpuset controller (CPUSETS) [Y/n/?] y
+    Include legacy /proc/<pid>/cpuset file (PROC_PID_CPUSET) [Y/n] y
+  Device controller (CGROUP_DEVICE) [Y/n/?] y
+  Simple CPU accounting controller (CGROUP_CPUACCT) [Y/n/?] y
+  Perf controller (CGROUP_PERF) [Y/n/?] y
+  Support for eBPF programs attached to cgroups (CGROUP_BPF) [Y/n/?] y
+Checkpoint/restore support (CHECKPOINT_RESTORE) [N/y/?] n
+*
+* Namespaces support
+*
+Namespaces support (NAMESPACES) [Y/n/?] y
+  UTS namespace (UTS_NS) [Y/n/?] y
+  IPC namespace (IPC_NS) [Y/n/?] y
+  User namespace (USER_NS) [Y/n/?] y
+  PID Namespaces (PID_NS) [Y/n/?] y
+  Network namespace (NET_NS) [Y/n/?] y
+Automatic process group scheduling (SCHED_AUTOGROUP) [N/y/?] n
+Boosting for CFS tasks (EXPERIMENTAL) (SCHED_TUNE) [Y/n/?] y
+Exynos Mobile Scheduler (SCHED_EMS) [Y/n/?] y
+Default to enabling the Energy Aware Scheduler feature (DEFAULT_USE_ENERGY_AWARE) [Y/n/?] y
+Enable simplified energy model feature (SIMPLIFIED_ENERGY_MODEL) [Y/n/?] y
+Enable Fluid RT scheduler feature (SCHED_USE_FLUID_RT) [Y/n/?] y
+Enable deprecated sysfs features to support old userspace tools (SYSFS_DEPRECATED) [N/y/?] n
+Kernel->user space relay support (formerly relayfs) (RELAY) [N/y/?] n
+Initial RAM filesystem and RAM disk (initramfs/initrd) support (BLK_DEV_INITRD) [Y/n/?] y
+  Initramfs source file(s) (INITRAMFS_SOURCE) [] 
+  Support initial ramdisk/ramfs compressed using gzip (RD_GZIP) [Y/n/?] y
+  Support initial ramdisk/ramfs compressed using bzip2 (RD_BZIP2) [Y/n/?] y
+  Support initial ramdisk/ramfs compressed using LZMA (RD_LZMA) [Y/n/?] y
+  Support initial ramdisk/ramfs compressed using XZ (RD_XZ) [Y/n/?] y
+  Support initial ramdisk/ramfs compressed using LZO (RD_LZO) [Y/n/?] y
+  Support initial ramdisk/ramfs compressed using LZ4 (RD_LZ4) [Y/n/?] y
+Compiler optimization level
+> 1. Optimize for performance (CC_OPTIMIZE_FOR_PERFORMANCE)
+  2. Optimize for size (CC_OPTIMIZE_FOR_SIZE)
+choice[1-2]: 1
+Dead code and data elimination (EXPERIMENTAL) (LD_DEAD_CODE_DATA_ELIMINATION) [Y/?] y
+*
+* Configure standard kernel features (expert users)
+*
+Configure standard kernel features (expert users) (EXPERT) [Y/?] y
+  Enable 16-bit UID system calls (UID16) [Y/n/?] y
+  Multiple users, groups and capabilities support (MULTIUSER) [Y/n/?] y
+  sgetmask/ssetmask syscalls support (SGETMASK_SYSCALL) [N/y/?] n
+  Sysfs syscall support (SYSFS_SYSCALL) [Y/n/?] y
+  Sysctl syscall support (SYSCTL_SYSCALL) [N/y/?] n
+  Posix Clocks & timers (POSIX_TIMERS) [Y/n/?] y
+  Load all symbols for debugging/ksymoops (KALLSYMS) [Y/n/?] y
+  Enable support for printk (PRINTK) [Y/n/?] y
+  BUG() support (BUG) [Y/?] y
+  Enable ELF core dumps (ELF_CORE) [Y/n/?] y
+  Enable full-sized data structures for core (BASE_FULL) [Y/n/?] y
+  Enable futex support (FUTEX) [Y/n/?] y
+  Enable eventpoll support (EPOLL) [Y/n/?] y
+  Enable signalfd() system call (SIGNALFD) [Y/n/?] y
+  Enable timerfd() system call (TIMERFD) [Y/n/?] y
+  Enable eventfd() system call (EVENTFD) [Y/?] y
+Enable bpf() system call (BPF_SYSCALL) [Y/n/?] y
+Use full shmem filesystem (SHMEM) [Y/n/?] y
+Enable AIO support (AIO) [Y/n/?] y
+Enable madvise/fadvise syscalls (ADVISE_SYSCALLS) [Y/n/?] y
+Enable userfaultfd() system call (USERFAULTFD) [N/y/?] n
+Enable membarrier() system call (MEMBARRIER) [Y/n/?] y
+Embedded system (EMBEDDED) [Y/n/?] y
+PC/104 support (PC104) [N/y/?] n
+*
+* Kernel Performance Events And Counters
+*
+Kernel performance events and counters (PERF_EVENTS) [Y/n/?] y
+Enable VM event counters for /proc/vmstat (VM_EVENT_COUNTERS) [Y/n/?] y
+Enable SLUB debugging support (SLUB_DEBUG) [N/y/?] n
+Enable memcg SLUB sysfs support by default (SLUB_MEMCG_SYSFS_ON) [N/y/?] n
+Disable heap randomization (COMPAT_BRK) [N/y/?] n
+Choose SLAB allocator
+  1. SLAB (SLAB)
+> 2. SLUB (Unqueued Allocator) (SLUB)
+  3. SLOB (Simple Allocator) (SLOB)
+choice[1-3?]: 2
+Allow slab caches to be merged (SLAB_MERGE_DEFAULT) [Y/n/?] y
+SLAB freelist randomization (SLAB_FREELIST_RANDOM) [N/y/?] n
+Harden slab freelist metadata (SLAB_FREELIST_HARDENED) [N/y/?] n
+SLUB per cpu partial cache (SLUB_CPU_PARTIAL) [Y/n/?] y
+Profiling support (PROFILING) [Y/n/?] y
+Kprobes (KPROBES) [N/y/?] n
+Optimize very unlikely/likely branches (JUMP_LABEL) [N/y/?] n
+*
+* GCC plugins
+*
+GCC plugins (GCC_PLUGINS) [N/y/?] n
+Stack Protector buffer overflow detection
+  1. None (CC_STACKPROTECTOR_NONE)
+  2. Regular (CC_STACKPROTECTOR_REGULAR)
+> 3. Strong (CC_STACKPROTECTOR_STRONG)
+choice[1-3?]: 3
+Kernel linker
+  1. gold (LD_GOLD)
+> 2. lld (LD_LLD)
+choice[1-2?]: 2
+Use clang ThinLTO (EXPERIMENTAL) (THINLTO) [N/y/?] n
+Link-Time Optimization (LTO) (EXPERIMENTAL)
+  1. None (LTO_NONE)
+> 2. Use clang Link Time Optimization (LTO) (EXPERIMENTAL) (LTO_CLANG)
+choice[1-2?]: 2
+Use clang Control Flow Integrity (CFI) (EXPERIMENTAL) (CFI_CLANG) [N/y/?] (NEW) 
+Enable LLVM's polyhedral loop optimizer (Polly) (LLVM_POLLY) [Y/n/?] y
+Number of bits to use for ASLR of mmap base address (ARCH_MMAP_RND_BITS) [18] 18
+Number of bits to use for ASLR of mmap base address for compatible applications (ARCH_MMAP_RND_COMPAT_BITS) [11] 11
+Use a virtually-mapped stack (VMAP_STACK) [Y/n/?] y
+Perform full reference count validation at the expense of speed (REFCOUNT_FULL) [Y/n/?] y
+*
+* GCOV-based kernel profiling
+*
+Enable gcov-based kernel profiling (GCOV_KERNEL) [N/y/?] n
+*
+* IO Schedulers
+*
+Deadline I/O scheduler (IOSCHED_DEADLINE) [Y/n/m/?] y
+Maple I/O scheduler (IOSCHED_MAPLE) [Y/n/m] y
+CFQ I/O scheduler (IOSCHED_CFQ) [Y/n/m/?] y
+  CFQ Group Scheduling support (CFQ_GROUP_IOSCHED) [Y/n/?] y
+IOPS based I/O scheduler (IOSCHED_FIOPS) [Y/n/m/?] y
+Simple I/O scheduler (IOSCHED_SIO) [Y/n/m/?] y
+Zen I/O scheduler (IOSCHED_ZEN) [Y/n/m/?] y
+Anxiety I/O scheduler (IOSCHED_ANXIETY) [Y/n/m/?] y
+Default I/O scheduler
+  1. Deadline (DEFAULT_DEADLINE)
+> 2. CFQ (DEFAULT_CFQ)
+  3. MAPLE (DEFAULT_MAPLE) (NEW)
+  4. FIOPS (DEFAULT_FIOPS) (NEW)
+  5. SIO (DEFAULT_SIO) (NEW)
+  6. ZEN (DEFAULT_ZEN) (NEW)
+  7. Anxiety (DEFAULT_ANXIETY) (NEW)
+  8. No-op (DEFAULT_NOOP)
+choice[1-8?]: MQ deadline I/O scheduler (MQ_IOSCHED_DEADLINE) [Y/n/m/?] y
+Kyber I/O scheduler (MQ_IOSCHED_KYBER) [Y/n/m/?] y
+BFQ I/O scheduler (IOSCHED_BFQ) [Y/n/m/?] y
+  BFQ hierarchical scheduling support (BFQ_GROUP_IOSCHED) [N/y/?] (NEW) 
+*
+* TCP: advanced congestion control
+*
+TCP: advanced congestion control (TCP_CONG_ADVANCED) [Y/n/?] y
+  Binary Increase Congestion (BIC) control (TCP_CONG_BIC) [Y/n/m/?] y
+  CUBIC TCP (TCP_CONG_CUBIC) [Y/n/m/?] y
+  TCP Westwood+ (TCP_CONG_WESTWOOD) [Y/n/m/?] y
+  H-TCP (TCP_CONG_HTCP) [Y/n/m/?] y
+  High Speed TCP (TCP_CONG_HSTCP) [N/m/y/?] n
+  TCP-Hybla congestion control algorithm (TCP_CONG_HYBLA) [N/m/y/?] n
+  TCP Vegas (TCP_CONG_VEGAS) [N/m/y/?] n
+  TCP NV (TCP_CONG_NV) [N/m/y/?] n
+  Scalable TCP (TCP_CONG_SCALABLE) [N/m/y/?] n
+  TCP Low Priority (TCP_CONG_LP) [N/m/y/?] n
+  TCP Veno (TCP_CONG_VENO) [N/m/y/?] n
+  YeAH TCP (TCP_CONG_YEAH) [N/m/y/?] n
+  TCP Illinois (TCP_CONG_ILLINOIS) [N/m/y/?] n
+  DataCenter TCP (DCTCP) (TCP_CONG_DCTCP) [N/m/y/?] n
+  CAIA Delay-Gradient (CDG) (TCP_CONG_CDG) [N/m/y/?] n
+  BBR TCP (TCP_CONG_BBR) [N/m/y/?] n
+  Default TCP congestion control
+    1. Bic (DEFAULT_BIC)
+    2. Cubic (DEFAULT_CUBIC)
+    3. Htcp (DEFAULT_HTCP) (NEW)
+  > 4. Westwood (DEFAULT_WESTWOOD)
+    5. Reno (DEFAULT_RENO)
+  choice[1-5?]: *
+* Allow override default queue discipline
+*
+Allow override default queue discipline (NET_SCH_DEFAULT) [Y/n/?] y
+  Default queuing discipline
+    1. Fair Queue (DEFAULT_FQ) (NEW)
+    2. Controlled Delay (DEFAULT_CODEL) (NEW)
+  > 3. Fair Queue Controlled Delay (DEFAULT_FQ_CODEL)
+    4. Priority FIFO Fast (DEFAULT_PFIFO_FAST) (NEW)
+  choice[1-4?]: *
+* Block devices
+*
+Block devices (BLK_DEV) [Y/n/?] y
+  Null test block driver (BLK_DEV_NULL_BLK) [N/m/y] n
+  Compressed RAM block device support (ZRAM) [Y/n/m/?] y
+    Default zram compressor
+      1. lzo (ZRAM_DEF_COMP_LZO)
+      2. zstd (ZRAM_DEF_COMP_ZSTD) (NEW)
+    > 3. lz4 (ZRAM_DEF_COMP_LZ4)
+    choice[1-3]:   Write back incompressible or idle page to backing device (ZRAM_WRITEBACK) [Y/n/?] y
+  Track zRam block status (ZRAM_MEMORY_TRACKING) [N/y/?] n
+  Limit zram lru writeback (ZRAM_LRU_WRITEBACK_LIMIT) [5120] 5120
+  Loopback device support (BLK_DEV_LOOP) [Y/n/m/?] y
+    Number of loop devices to pre-create at init time (BLK_DEV_LOOP_MIN_COUNT) [16] 16
+    Cryptoloop Support (BLK_DEV_CRYPTOLOOP) [N/m/y/?] n
+  DRBD Distributed Replicated Block Device support (BLK_DEV_DRBD) [N/m/y/?] n
+  Network block device support (BLK_DEV_NBD) [N/m/y/?] n
+  RAM block device support (BLK_DEV_RAM) [Y/n/m/?] y
+    Default number of RAM disks (BLK_DEV_RAM_COUNT) [16] 16
+    Default RAM disk size (kbytes) (BLK_DEV_RAM_SIZE) [8192] 8192
+  Packet writing on CD/DVD media (DEPRECATED) (CDROM_PKTCDVD) [N/m/y/?] n
+  ATA over Ethernet support (ATA_OVER_ETH) [N/m/y/?] n
+  Rados block device (RBD) (BLK_DEV_RBD) [N/m/y/?] n
+*
+* Multiple devices driver support (RAID and LVM)
+*
+Multiple devices driver support (RAID and LVM) (MD) [Y/n/?] y
+  RAID support (BLK_DEV_MD) [N/m/y/?] n
+  Block device as cache (BCACHE) [N/m/y/?] n
+  Device mapper support (BLK_DEV_DM) [Y/n/m/?] y
+    request-based DM: use blk-mq I/O path by default (DM_MQ_DEFAULT) [N/y/?] n
+    Device mapper debugging support (DM_DEBUG) [N/y/?] n
+    Block manager locking (DM_DEBUG_BLOCK_MANAGER_LOCKING) [N/y/?] n
+    Crypt target support (DM_CRYPT) [Y/n/m/?] y
+    Snapshot target (DM_SNAPSHOT) [Y/n/m/?] y
+    Thin provisioning target (DM_THIN_PROVISIONING) [N/m/y/?] n
+    Cache target (EXPERIMENTAL) (DM_CACHE) [N/m/y/?] n
+    Era target (EXPERIMENTAL) (DM_ERA) [N/m/y/?] n
+    Mirror target (DM_MIRROR) [N/m/y/?] n
+    RAID 1/4/5/6/10 target (DM_RAID) [N/m/y/?] n
+    Zero target (DM_ZERO) [N/m/y/?] n
+    Multipath target (DM_MULTIPATH) [N/m/y/?] n
+    I/O delaying target (DM_DELAY) [N/m/y/?] n
+    DM uevents (DM_UEVENT) [Y/n/?] y
+    Flakey target (DM_FLAKEY) [N/m/y/?] n
+    Verity target support (DM_VERITY) [Y/n/m/?] y
+      Verity forward error correction support (DM_VERITY_FEC) [Y/n/?] y
+    Switch target support (EXPERIMENTAL) (DM_SWITCH) [N/m/y/?] n
+    Log writes target support (DM_LOG_WRITES) [N/m/y/?] n
+    Integrity target support (DM_INTEGRITY) [N/m/y/?] n
+  Support AVB specific verity error behavior (DM_VERITY_AVB) [N/m/y/?] n
+  Android verity target support (DM_ANDROID_VERITY) [N/y/?] (NEW) 
+  Verity will validate blocks at most once (DM_ANDROID_VERITY_AT_MOST_ONCE_DEFAULT_ENABLED) [Y/n/?] y
+  Backup block device (DM_BOW) [N/m/y/?] n
+*
+* Miscellaneous filesystems
+*
+Miscellaneous filesystems (MISC_FILESYSTEMS) [Y/n/?] y
+  ORANGEFS (Powered by PVFS) support (ORANGEFS_FS) [N/m/y/?] n
+  ADFS file system support (ADFS_FS) [N/m/y/?] n
+  Amiga FFS file system support (AFFS_FS) [N/m/y/?] n
+  eCrypt filesystem layer support (ECRYPT_FS) [Y/n/m/?] y
+    Enable notifications for userspace key wrap/unwrap (ECRYPT_FS_MESSAGING) [Y/n/?] y
+  sdcard file system (SDCARD_FS) [Y/n/m/?] y
+  Apple Macintosh file system support (HFS_FS) [N/m/y/?] n
+  Apple Extended HFS file system support (HFSPLUS_FS) [N/m/y/?] n
+  BeOS file system (BeFS) support (read only) (BEFS_FS) [N/m/y/?] n
+  BFS file system support (BFS_FS) [N/m/y/?] n
+  EFS file system support (read only) (EFS_FS) [N/m/y/?] n
+  Compressed ROM file system support (cramfs) (OBSOLETE) (CRAMFS) [Y/n/m/?] y
+  SquashFS 4.0 - Squashed file system support (SQUASHFS) [N/m/y/?] n
+  FreeVxFS file system support (VERITAS VxFS(TM) compatible) (VXFS_FS) [N/m/y/?] n
+  Minix file system support (MINIX_FS) [N/m/y/?] n
+  SonicBlue Optimized MPEG File System support (OMFS_FS) [N/m/y/?] n
+  OS/2 HPFS file system support (HPFS_FS) [N/m/y/?] n
+  QNX4 file system support (read only) (QNX4FS_FS) [N/m/y/?] n
+  QNX6 file system support (read only) (QNX6FS_FS) [N/m/y/?] n
+  ROM file system support (ROMFS_FS) [N/m/y/?] n
+  Persistent store support (PSTORE) [Y/n/m/?] y
+    Choose compression algorithm
+    > 1. ZLIB (PSTORE_ZLIB_COMPRESS)
+      2. LZO (PSTORE_LZO_COMPRESS)
+      3. LZ4 (PSTORE_LZ4_COMPRESS)
+    choice[1-3?]: 1
+    Log kernel console messages (PSTORE_CONSOLE) [Y/n/?] y
+    Log user space messages (PSTORE_PMSG) [Y/n/?] y
+    Log panic/oops to a RAM buffer (PSTORE_RAM) [Y/n/m/?] y
+  System V/Xenix/V7/Coherent file system support (SYSV_FS) [N/m/y/?] n
+  UFS file system support (read only) (UFS_FS) [N/m/y/?] n
+  EROFS filesystem support (EROFS_FS) [Y/n/m/?] y
+    EROFS debugging feature (EROFS_FS_DEBUG) [N/y/?] (NEW) 
+    EROFS extended attributes (EROFS_FS_XATTR) [Y/n/?] (NEW) 
+      EROFS Access Control Lists (EROFS_FS_POSIX_ACL) [Y/n/?] (NEW) 
+      EROFS Security Labels (EROFS_FS_SECURITY) [Y/n/?] (NEW) 
+    EROFS Data Compression Support (EROFS_FS_ZIP) [Y/n/?] (NEW) 
+      EROFS Cluster Pages Hard Limit (EROFS_FS_CLUSTER_PAGE_LIMIT) [1] (NEW) 
+    EROFS LZ4 Acceleration for ARMv8 (EROFS_FS_ARMV8_ACCELERATED_LZ4) [Y/n/?] (NEW) 
+*
+* Security options
+*
+Enable access key retention support (KEYS) [Y/?] y
+  Enable register of persistent per-UID keyrings (PERSISTENT_KEYRINGS) [N/y/?] n
+  Large payload keys (BIG_KEYS) [N/y/?] n
+  ENCRYPTED KEYS (ENCRYPTED_KEYS) [Y/?] y
+  Diffie-Hellman operations on retained keys (KEY_DH_OPERATIONS) [N/y/?] n
+Restrict unprivileged access to the kernel syslog (SECURITY_DMESG_RESTRICT) [N/y/?] n
+Restrict unprivileged use of performance events (SECURITY_PERF_EVENTS_RESTRICT) [Y/n/?] y
+Enable different security models (SECURITY) [Y/n/?] y
+Enable the securityfs filesystem (SECURITYFS) [Y/?] y
+Socket and Networking Security Hooks (SECURITY_NETWORK) [Y/?] y
+XFRM (IPSec) Networking Security Hooks (SECURITY_NETWORK_XFRM) [N/y/?] n
+Security hooks for pathname based access control (SECURITY_PATH) [Y/?] y
+Low address space for LSM to protect from user allocation (LSM_MMAP_MIN_ADDR) [4096] 4096
+Harden memory copies between kernel and userspace (HARDENED_USERCOPY) [Y/n/?] y
+  Refuse to copy allocations that span multiple pages (HARDENED_USERCOPY_PAGESPAN) [N/y/?] n
+Harden common str/mem functions against buffer overflows (FORTIFY_SOURCE) [N/y/?] n
+Force all usermode helper calls through a single binary (STATIC_USERMODEHELPER) [N/y/?] n
+NSA SELinux Support (SECURITY_SELINUX) [Y/n/?] y
+  NSA SELinux boot parameter (SECURITY_SELINUX_BOOTPARAM) [Y/n/?] y
+    NSA SELinux boot parameter default value (SECURITY_SELINUX_BOOTPARAM_VALUE) [0] 0
+  NSA SELinux runtime disable (SECURITY_SELINUX_DISABLE) [Y/n/?] y
+  NSA SELinux Development Support (SECURITY_SELINUX_DEVELOP) [Y/n/?] y
+  NSA SELinux AVC Statistics (SECURITY_SELINUX_AVC_STATS) [Y/n/?] y
+  NSA SELinux checkreqprot default value (SECURITY_SELINUX_CHECKREQPROT_VALUE) [1] 1
+  NSA SELinux override setenforce (SECURITY_SELINUX_SETENFORCE_OVERRIDE) [N/y/?] n
+Simplified Mandatory Access Control Kernel Support (SECURITY_SMACK) [Y/n/?] y
+  Reporting on access granted by Smack rules (SECURITY_SMACK_BRINGUP) [N/y/?] n
+  Packet marking using secmarks for netfilter (SECURITY_SMACK_NETFILTER) [N/y/?] n
+  Treat delivering signals as an append operation (SECURITY_SMACK_APPEND_SIGNALS) [N/y/?] n
+TOMOYO Linux Support (SECURITY_TOMOYO) [Y/n/?] y
+  Default maximal count for learning mode (SECURITY_TOMOYO_MAX_ACCEPT_ENTRY) [2048] 2048
+  Default maximal count for audit log (SECURITY_TOMOYO_MAX_AUDIT_LOG) [1024] 1024
+  Activate without calling userspace policy loader. (SECURITY_TOMOYO_OMIT_USERSPACE_LOADER) [N/y/?] n
+    Location of userspace policy loader (SECURITY_TOMOYO_POLICY_LOADER) [/sbin/tomoyo-init] /sbin/tomoyo-init
+    Trigger for calling userspace policy loader (SECURITY_TOMOYO_ACTIVATION_TRIGGER) [/sbin/init] /sbin/init
+AppArmor support (SECURITY_APPARMOR) [Y/n/?] y
+  AppArmor boot parameter default value (SECURITY_APPARMOR_BOOTPARAM_VALUE) [1] 1
+  Enable introspection of sha1 hashes for loaded profiles (SECURITY_APPARMOR_HASH) [Y/n/?] y
+    Enable policy hash introspection by default (SECURITY_APPARMOR_HASH_DEFAULT) [Y/n/?] y
+  Build AppArmor with debug code (SECURITY_APPARMOR_DEBUG) [N/y/?] n
+Pin load of kernel files (modules, fw, etc) to one filesystem (SECURITY_LOADPIN) [N/y/?] n
+Yama support (SECURITY_YAMA) [Y/n/?] y
+Integrity subsystem (INTEGRITY) [Y/n/?] y
+  Digital signature verification using multiple keyrings (INTEGRITY_SIGNATURE) [Y/n/?] y
+    Enable asymmetric keys support (INTEGRITY_ASYMMETRIC_KEYS) [Y/n/?] y
+      Require all keys on the integrity keyrings be signed (INTEGRITY_TRUSTED_KEYRING) [Y/n/?] (NEW) 
+  Enables integrity auditing support  (INTEGRITY_AUDIT) [Y/n/?] y
+  Integrity Measurement Architecture(IMA) (IMA) [N/y/?] n
+  EVM support (EVM) [Y/n/?] y
+    FSUUID (version 2) (EVM_ATTR_FSUUID) [Y/n/?] y
+    Additional SMACK xattrs (EVM_EXTRA_SMACK_XATTRS) [N/y/?] n
+    Load an X509 certificate onto the '.evm' trusted keyring (EVM_LOAD_X509) [N/y/?] (NEW) 
+Default security module
+> 1. SELinux (DEFAULT_SECURITY_SELINUX)
+  2. Simplified Mandatory Access Control (DEFAULT_SECURITY_SMACK)
+  3. TOMOYO (DEFAULT_SECURITY_TOMOYO)
+  4. AppArmor (DEFAULT_SECURITY_APPARMOR)
+  5. Unix Discretionary Access Controls (DEFAULT_SECURITY_DAC)
+choice[1-5?]: 1
+*
+* Certificates for signature checking
+*
+Provide system-wide ring of trusted keys (SYSTEM_TRUSTED_KEYRING) [Y/n/?] y
+  Additional X.509 keys for default system keyring (SYSTEM_TRUSTED_KEYS) [] (NEW) 
+  Reserve area for inserting a certificate without recompiling (SYSTEM_EXTRA_CERTIFICATE) [N/y/?] (NEW) 
+  Provide a keyring to which extra trustable keys may be added (SECONDARY_TRUSTED_KEYRING) [N/y/?] (NEW) 
+Provide system-wide ring of blacklisted keys (SYSTEM_BLACKLIST_KEYRING) [N/y/?] n
+#
+# configuration written to .config
+#
+  GEN     ./Makefile
+Using .config as base
+Merging /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/aosp.config
+Value of CONFIG_DEBUG_FS is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/aosp.config:
+Previous value: CONFIG_DEBUG_FS=y
+New value: # CONFIG_DEBUG_FS is not set
+
+Value of CONFIG_S3C2410_WATCHDOG is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/aosp.config:
+Previous value: CONFIG_S3C2410_WATCHDOG=y
+New value: # CONFIG_S3C2410_WATCHDOG is not set
+
+Value of CONFIG_SCSC_WLBTD is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/aosp.config:
+Previous value: CONFIG_SCSC_WLBTD=y
+New value: # CONFIG_SCSC_WLBTD is not set
+
+Value of CONFIG_SCSC_WRITE_INFO_FILE_WLBTD is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/aosp.config:
+Previous value: CONFIG_SCSC_WRITE_INFO_FILE_WLBTD=y
+New value: # CONFIG_SCSC_WRITE_INFO_FILE_WLBTD is not set
+
+Value of CONFIG_SCSC_AP_INTERFACE_NAME is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/aosp.config:
+Previous value: CONFIG_SCSC_AP_INTERFACE_NAME="swlan0"
+New value: CONFIG_SCSC_AP_INTERFACE_NAME="wlan1"
+
+Value of CONFIG_SCSC_WLAN_MAC_ADDRESS_FILENAME is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/aosp.config:
+Previous value: CONFIG_SCSC_WLAN_MAC_ADDRESS_FILENAME="/efs/wifi/.mac.info"
+New value: CONFIG_SCSC_WLAN_MAC_ADDRESS_FILENAME="/mnt/vendor/efs/wifi/.mac.info"
+
+Value of CONFIG_SCSC_WLAN_MHS_STATIC_INTERFACE is redefined by fragment /workspaces/test-re/hallium/kernel/samsung/universal9611/arch/arm64/configs/vendor/aosp.config:
+Previous value: # CONFIG_SCSC_WLAN_MHS_STATIC_INTERFACE is not set
+New value: CONFIG_SCSC_WLAN_MHS_STATIC_INTERFACE=y
+
+#
+# merged configuration written to .config (needs make)
+#
+  GEN     ./Makefile
+scripts/kconfig/conf  --oldconfig Kconfig
+#
+# configuration written to .config
+#
+make[1]: Leaving directory '/workspaces/test-re/hallium/out/target/product/m31/obj/KERNEL_OBJ'
+make: Leaving directory '/workspaces/test-re/hallium/kernel/samsung/universal9611'
+[ 40% 2/5] Building Kernel Image (Image)
+FAILED: out/target/product/m31/obj/KERNEL_OBJ/arch/arm64/boot/Image
+/bin/bash -c "(PATH=/workspaces/test-re/hallium/out/host/linux-x86/bin:\$PATH PATH=/workspaces/test-re/hallium/prebuilts/clang/host/linux-x86/clang-r416183b1/bin:\$PATH LD_LIBRARY_PATH=/workspaces/test-re/hallium/prebuilts/clang/host/linux-x86/clang-r416183b1/lib64:\$LD_LIBRARY_PATH PATH=/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin:\$PATH LD_LIBRARY_PATH=/workspaces/test-re/hallium/prebuilts/tools-lineage/linux-x86/lib:\$LD_LIBRARY_PATH PERL5LIB=/workspaces/test-re/hallium/prebuilts/tools-lineage/common/perl-base PATH=/workspaces/test-re/hallium/prebuilts/tools-lineage/linux-x86/bin:/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin:\$PATH BISON_PKGDATADIR=/workspaces/test-re/hallium/prebuilts/build-tools/common/bison /workspaces/test-re/hallium/prebuilts/build-tools/linux-x86/bin/make  -j16 CPATH=\"/usr/include:/usr/include/x86_64-linux-gnu\" HOSTCFLAGS=\"-fuse-ld=lld\" HOSTLDFLAGS=\"-L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -fuse-ld=lld\" HOSTCC=/workspaces/test-re/hallium/prebuilts/clang/host/linux-x86/clang-r416183b1/bin/clang HOSTCXX=/workspaces/test-re/hallium/prebuilts/clang/host/linux-x86/clang-r416183b1/bin/clang++ LEX=/workspaces/test-re/hallium/prebuilts/build-tools/linux-x86/bin/flex YACC=/workspaces/test-re/hallium/prebuilts/build-tools/linux-x86/bin/bison M4=/workspaces/test-re/hallium/prebuilts/build-tools/linux-x86/bin/m4 DTC_EXT=/workspaces/test-re/hallium/out/host/linux-x86/bin/dtc HOSTCFLAGS=\"-fuse-ld=lld -Wno-unused-command-line-argument\" -C kernel/samsung/universal9611 O=/workspaces/test-re/hallium/out/target/product/m31/obj/KERNEL_OBJ ARCH=arm64 CROSS_COMPILE=\"/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-\" CROSS_COMPILE_ARM32=\"/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androidkernel-\" CROSS_COMPILE_COMPAT=\"/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androidkernel-\" CLANG_TRIPLE=aarch64-linux-gnu- CC=\" clang\"  Image ) && (if grep -q '^CONFIG_OF=y' out/target/product/m31/obj/KERNEL_OBJ/.config; then 			echo \"Building DTBs\"; 			PATH=/workspaces/test-re/hallium/out/host/linux-x86/bin:\$PATH PATH=/workspaces/test-re/hallium/prebuilts/clang/host/linux-x86/clang-r416183b1/bin:\$PATH LD_LIBRARY_PATH=/workspaces/test-re/hallium/prebuilts/clang/host/linux-x86/clang-r416183b1/lib64:\$LD_LIBRARY_PATH PATH=/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin:\$PATH LD_LIBRARY_PATH=/workspaces/test-re/hallium/prebuilts/tools-lineage/linux-x86/lib:\$LD_LIBRARY_PATH PERL5LIB=/workspaces/test-re/hallium/prebuilts/tools-lineage/common/perl-base PATH=/workspaces/test-re/hallium/prebuilts/tools-lineage/linux-x86/bin:/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin:\$PATH BISON_PKGDATADIR=/workspaces/test-re/hallium/prebuilts/build-tools/common/bison /workspaces/test-re/hallium/prebuilts/build-tools/linux-x86/bin/make  -j16 CPATH=\"/usr/include:/usr/include/x86_64-linux-gnu\" HOSTCFLAGS=\"-fuse-ld=lld\" HOSTLDFLAGS=\"-L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -fuse-ld=lld\" HOSTCC=/workspaces/test-re/hallium/prebuilts/clang/host/linux-x86/clang-r416183b1/bin/clang HOSTCXX=/workspaces/test-re/hallium/prebuilts/clang/host/linux-x86/clang-r416183b1/bin/clang++ LEX=/workspaces/test-re/hallium/prebuilts/build-tools/linux-x86/bin/flex YACC=/workspaces/test-re/hallium/prebuilts/build-tools/linux-x86/bin/bison M4=/workspaces/test-re/hallium/prebuilts/build-tools/linux-x86/bin/m4 DTC_EXT=/workspaces/test-re/hallium/out/host/linux-x86/bin/dtc HOSTCFLAGS=\"-fuse-ld=lld -Wno-unused-command-line-argument\" -C kernel/samsung/universal9611 O=/workspaces/test-re/hallium/out/target/product/m31/obj/KERNEL_OBJ ARCH=arm64 CROSS_COMPILE=\"/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-\" CROSS_COMPILE_ARM32=\"/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androidkernel-\" CROSS_COMPILE_COMPAT=\"/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androidkernel-\" CLANG_TRIPLE=aarch64-linux-gnu- CC=\" clang\"  dtbs; 		fi ) && (if grep -q '=m' out/target/product/m31/obj/KERNEL_OBJ/.config; then 			echo \"Building Kernel Modules\"; 			PATH=/workspaces/test-re/hallium/out/host/linux-x86/bin:\$PATH PATH=/workspaces/test-re/hallium/prebuilts/clang/host/linux-x86/clang-r416183b1/bin:\$PATH LD_LIBRARY_PATH=/workspaces/test-re/hallium/prebuilts/clang/host/linux-x86/clang-r416183b1/lib64:\$LD_LIBRARY_PATH PATH=/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin:\$PATH LD_LIBRARY_PATH=/workspaces/test-re/hallium/prebuilts/tools-lineage/linux-x86/lib:\$LD_LIBRARY_PATH PERL5LIB=/workspaces/test-re/hallium/prebuilts/tools-lineage/common/perl-base PATH=/workspaces/test-re/hallium/prebuilts/tools-lineage/linux-x86/bin:/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin:\$PATH BISON_PKGDATADIR=/workspaces/test-re/hallium/prebuilts/build-tools/common/bison /workspaces/test-re/hallium/prebuilts/build-tools/linux-x86/bin/make  -j16 CPATH=\"/usr/include:/usr/include/x86_64-linux-gnu\" HOSTCFLAGS=\"-fuse-ld=lld\" HOSTLDFLAGS=\"-L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -fuse-ld=lld\" HOSTCC=/workspaces/test-re/hallium/prebuilts/clang/host/linux-x86/clang-r416183b1/bin/clang HOSTCXX=/workspaces/test-re/hallium/prebuilts/clang/host/linux-x86/clang-r416183b1/bin/clang++ LEX=/workspaces/test-re/hallium/prebuilts/build-tools/linux-x86/bin/flex YACC=/workspaces/test-re/hallium/prebuilts/build-tools/linux-x86/bin/bison M4=/workspaces/test-re/hallium/prebuilts/build-tools/linux-x86/bin/m4 DTC_EXT=/workspaces/test-re/hallium/out/host/linux-x86/bin/dtc HOSTCFLAGS=\"-fuse-ld=lld -Wno-unused-command-line-argument\" -C kernel/samsung/universal9611 O=/workspaces/test-re/hallium/out/target/product/m31/obj/KERNEL_OBJ ARCH=arm64 CROSS_COMPILE=\"/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-\" CROSS_COMPILE_ARM32=\"/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androidkernel-\" CROSS_COMPILE_COMPAT=\"/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androidkernel-\" CLANG_TRIPLE=aarch64-linux-gnu- CC=\" clang\"  modules || exit \"\$?\"; 			echo \"Installing Kernel Modules\"; 			PATH=/workspaces/test-re/hallium/out/host/linux-x86/bin:\$PATH PATH=/workspaces/test-re/hallium/prebuilts/clang/host/linux-x86/clang-r416183b1/bin:\$PATH LD_LIBRARY_PATH=/workspaces/test-re/hallium/prebuilts/clang/host/linux-x86/clang-r416183b1/lib64:\$LD_LIBRARY_PATH PATH=/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin:\$PATH LD_LIBRARY_PATH=/workspaces/test-re/hallium/prebuilts/tools-lineage/linux-x86/lib:\$LD_LIBRARY_PATH PERL5LIB=/workspaces/test-re/hallium/prebuilts/tools-lineage/common/perl-base PATH=/workspaces/test-re/hallium/prebuilts/tools-lineage/linux-x86/bin:/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin:\$PATH BISON_PKGDATADIR=/workspaces/test-re/hallium/prebuilts/build-tools/common/bison /workspaces/test-re/hallium/prebuilts/build-tools/linux-x86/bin/make  -j16 CPATH=\"/usr/include:/usr/include/x86_64-linux-gnu\" HOSTCFLAGS=\"-fuse-ld=lld\" HOSTLDFLAGS=\"-L/usr/lib/x86_64-linux-gnu -L/usr/lib64 -fuse-ld=lld\" HOSTCC=/workspaces/test-re/hallium/prebuilts/clang/host/linux-x86/clang-r416183b1/bin/clang HOSTCXX=/workspaces/test-re/hallium/prebuilts/clang/host/linux-x86/clang-r416183b1/bin/clang++ LEX=/workspaces/test-re/hallium/prebuilts/build-tools/linux-x86/bin/flex YACC=/workspaces/test-re/hallium/prebuilts/build-tools/linux-x86/bin/bison M4=/workspaces/test-re/hallium/prebuilts/build-tools/linux-x86/bin/m4 DTC_EXT=/workspaces/test-re/hallium/out/host/linux-x86/bin/dtc HOSTCFLAGS=\"-fuse-ld=lld -Wno-unused-command-line-argument\" -C kernel/samsung/universal9611 O=/workspaces/test-re/hallium/out/target/product/m31/obj/KERNEL_OBJ ARCH=arm64 CROSS_COMPILE=\"/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-\" CROSS_COMPILE_ARM32=\"/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androidkernel-\" CROSS_COMPILE_COMPAT=\"/workspaces/test-re/hallium/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androidkernel-\" CLANG_TRIPLE=aarch64-linux-gnu- CC=\" clang\"  INSTALL_MOD_PATH=/workspaces/test-re/hallium/out/target/product/m31/obj/PACKAGING/kernel_modules_intermediates INSTALL_MOD_STRIP=1 modules_install; 			 			kernel_release=\$(cat out/target/product/m31/obj/KERNEL_OBJ/include/config/kernel.release) 			kernel_modules_dir=/workspaces/test-re/hallium/out/target/product/m31/obj/PACKAGING/kernel_modules_intermediates/lib/modules/\$kernel_release 			; 			modules=\$(find \$kernel_modules_dir -type f -name '*.ko'); 			(    mkdir -p out/target/product/m31/vendor/lib/modules ) && (cp \$modules out/target/product/m31/vendor/lib/modules/ ) && (rm -rf /workspaces/test-re/hallium/out/target/product/m31/obj/PACKAGING/depmod_vendor_intermediates ) && (mkdir -p /workspaces/test-re/hallium/out/target/product/m31/obj/PACKAGING/depmod_vendor_intermediates/lib/modules/0.0/vendor/lib/modules ) && (cp \$modules /workspaces/test-re/hallium/out/target/product/m31/obj/PACKAGING/depmod_vendor_intermediates/lib/modules/0.0/vendor/lib/modules ) && (out/host/linux-x86/bin/depmod -b /workspaces/test-re/hallium/out/target/product/m31/obj/PACKAGING/depmod_vendor_intermediates 0.0 ) && (sed -e 's/\\(.*modules.*\\):/\\/\\1:/g' -e 's/ \\([^ ]*modules[^ ]*\\)/ \\/\\1/g' /workspaces/test-re/hallium/out/target/product/m31/obj/PACKAGING/depmod_vendor_intermediates/lib/modules/0.0/modules.dep > out/target/product/m31/vendor/lib/modules/modules.dep ) && (cp /workspaces/test-re/hallium/out/target/product/m31/obj/PACKAGING/depmod_vendor_intermediates/lib/modules/0.0/modules.softdep out/target/product/m31/vendor/lib/modules ) && (cp /workspaces/test-re/hallium/out/target/product/m31/obj/PACKAGING/depmod_vendor_intermediates/lib/modules/0.0/modules.alias out/target/product/m31/vendor/lib/modules ) && (rm -f out/target/product/m31/vendor/lib/modules/modules.load ) && (for MODULE in ; do basename \$MODULE >> out/target/product/m31/vendor/lib/modules/modules.load; done); 			 		fi )"
+make: Entering directory '/workspaces/test-re/hallium/kernel/samsung/universal9611'
+make[1]: Entering directory '/workspaces/test-re/hallium/out/target/product/m31/obj/KERNEL_OBJ'
+  GEN     ./Makefile
+scripts/kconfig/conf  --silentoldconfig Kconfig
+  CHK     include/config/kernel.release
+Cannot use CONFIG_LTO: -flto -fvisibility=default not supported by compiler
+make[1]: *** [/workspaces/test-re/hallium/kernel/samsung/universal9611/Makefile:1353: prepare-compiler-check] Error 1
+make[1]: Leaving directory '/workspaces/test-re/hallium/out/target/product/m31/obj/KERNEL_OBJ'
+make: *** [Makefile:146: sub-make] Error 2
+make: Leaving directory '/workspaces/test-re/hallium/kernel/samsung/universal9611'
+ninja: build stopped: subcommand failed.
+12:24:38 ninja failed with: exit status 1
+
+[0;31m#### failed to build some targets (34 seconds) ####[00m
+
